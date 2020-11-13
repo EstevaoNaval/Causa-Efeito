@@ -1,5 +1,5 @@
 # Causa-Efeito
-Causa-Efeito é um sistema baseado no padrão "summary pane" em que algum tipo de dado é lista verticalmente, podendo até adicionar, excluir e alterar as linhas. Projeto baseado no repositório App-Ideas de Florin Pop.
+Causa-Efeito é um sistema baseado no padrão "summary pane" em que o usuário pode acessar uma tela com detalhados ("detailed pane") através de uma lista vertical, geralmente, no lado esquerdo da tela detalhada. Projeto baseado no repositório App-Ideas de Florin Pop.
 
 **Pré-visualização:**
 
@@ -35,18 +35,18 @@ constraints:
 -   [x] ~User can click on a name in the list to update an adjacent pane on the
         page with that individuals full name, address, telephone number, and
         birthday.~
--   [ ] User can click on another name in the list to refresh the detail pane
-        with that individuals information.
+-   [x] ~User can click on another name in the list to refresh the detail pane
+        with that individuals information.~
 
 ## Bonus features
 
--   [ ] User can see the person name in the summary pane highlighted when the
-        cursor is hovered over it.
--   [ ] User can see the person name in the summary pane highlighted
+-   [x] ~User can see the person name in the summary pane highlighted when the
+        cursor is hovered over it.~
+-   [x] ~User can see the person name in the summary pane highlighted
         using a selection effect (color, size, etc.) when it is clicked. This is a
-        different effect from the hover effect
--   [ ] User can see the selection effect removed from a name in the summary
-        list when a new name is clicked.
+        different effect from the hover effect~
+-   [x] ~User can see the selection effect removed from a name in the summary
+        list when a new name is clicked.~
 
 ## Useful links and resources
 

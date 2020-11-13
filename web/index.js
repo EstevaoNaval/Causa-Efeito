@@ -7,13 +7,16 @@ const Pessoa = [
 
     {Nome: "Daiana Vanguarda Parlê del Toro", Endereco: "Rua Valdemar Corazza", Cidade: "Presidente Prudente", Estado: "SP", pais: "Brasil", Telefone: "+55 (017) 9445-4455", DtNascimento: "05/07/1975"},
 
-    {Nome: "Waldemir da Costa Malone", Endereco: "Rua Antônio Argento Sobrinho", Cidade: "Sorocaba", Estado: "SP", pais: "Brasil", Telefone: "+55 (022) 96552-7445", DtNascimento: "18/02/1990"}
+    {Nome: "Ismael Carlos da Costa de Azevedo", Endereco: "Rua Antônio Argento Sobrinho", Cidade: "Sorocaba", Estado: "SP", pais: "Brasil", Telefone: "+55 (022) 96552-7445", DtNascimento: "18/02/1990"},
+
+    {Nome: "Fernanda Paiva de Tales", Endereco: "Rua Ouro'douro", Cidade:"Curitiba", Estado:"MG", pais: "Brasil", Telefone: "+55 (022) 97558-7445", DtNascimento: "12/01/1969"}
 ]
 
-
-var outputListaPessoa = document.querySelector("#outputListaPessoa");
-
 for (let index = 0; index < Pessoa.length; index++) {
-    outputListaPessoa.insertAdjacentHTML('beforeend', `<a data-target='#listaPessoa${index}' aria-controls="listaPessoa${index}" data-toggle='collapse' aria-expanded='false' class='list-group-item list-group-item-action'><h6>${Pessoa[index].Nome}</h6></a>`);
-    outputListaPessoa.insertAdjacentHTML('beforeend', `<ul class='list-group' id='listaPessoa${index}'><li class='list-group-item list-group-item-action'><strong>Endereço:</strong> ${Pessoa[index].Endereco}</li><li class='list-group-item list-group-item-action'><strong>Cidade:</strong> ${Pessoa[index].Cidade}</li><li class='list-group-item list-group-item-action'><strong>Estado:</strong> ${Pessoa[index].Estado}</li><li class='list-group-item list-group-item-action'><strong>País:</strong> ${Pessoa[index].pais}</li><li class='list-group-item list-group-item-action'><strong>Telefone:</strong> ${Pessoa[index].Telefone}</li><li class='list-group-item list-group-item-action'><strong>Data de nascimento:</strong> ${Pessoa[index].DtNascimento}</li></ul>`);
+    var outputElementoGeral = document.querySelector("#outputListaPessoa");
+    outputElementoGeral.insertAdjacentHTML('beforeend', `<a href='#listaPessoa${index}' aria-controls="listaPessoa${index}" data-toggle='list' role='tab' class='list-group-item list-group-item-action' id='outputLinhaNome${index}'"><h6>${Pessoa[index].Nome}</h6></a>`);
+
+    var outputElementoGeral = document.querySelector("#outputDadoGeral");
+    outputElementoGeral.insertAdjacentHTML('beforeend', `<ul class='list-group tab-pane fade' id='listaPessoa${index}' role="tabpanel"><li class='list-group-item list-group-item-action'><strong>Nome completo:</strong> ${Pessoa[index].Nome}</li><li class='list-group-item list-group-item-action'><strong>Endereço:</strong> ${Pessoa[index].Endereco}</li><li class='list-group-item list-group-item-action'><strong>Cidade:</strong> ${Pessoa[index].Cidade}</li><li class='list-group-item list-group-item-action'><strong>Estado:</strong> ${Pessoa[index].Estado}</li><li class='list-group-item list-group-item-action'><strong>País:</strong> ${Pessoa[index].pais}</li><li class='list-group-item list-group-item-action'><strong>Telefone:</strong> ${Pessoa[index].Telefone}</li><li class='list-group-item list-group-item-action'><strong>Data de nascimento:</strong> ${Pessoa[index].DtNascimento}</li></ul><br>`);
 }
+
