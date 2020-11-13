@@ -1,7 +1,7 @@
 # Causa-Efeito
 Causa-Efeito é um sistema baseado no padrão "summary pane" em que o usuário pode acessar uma tela com detalhados ("detailed pane") através de uma lista vertical, geralmente, no lado esquerdo da tela detalhada. Projeto baseado no repositório App-Ideas de Florin Pop.
 
-**Pré-visualização:**
+**Pré-visualização:** https://bit.ly/3pu63Ob
 
 **Nível:** 1-Iniciante
 
